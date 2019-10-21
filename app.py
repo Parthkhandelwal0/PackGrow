@@ -20,7 +20,6 @@ login_manager.login_message_category = 'info'
 def load_user(user_id):
     return User1.query.get(int(user_id))
 
-# sfefsfgsgsgs
 class User1(db.Model, UserMixin):
     id=db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), nullable=False)
