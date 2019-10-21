@@ -1,0 +1,93 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<style>
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1770px;
+        }
+    }
+
+    body {
+        background: white;
+        margin-top: 0px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #showcase {
+        margin-top: 60px;
+    }
+
+    #list {
+        margin-top: 200px;
+        font-size: x-large;
+        margin-bottom: 100px;
+    }
+
+    #showcase .showcase-middle {
+        margin-top: 100px;
+    }
+</style>
+<center>
+    <h3 class="heading">Pack Grow is a business platform for dealing in Packaging materials</h3>
+</center>
+<section id="showcase">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="showcase-left">
+                    <img class="img-fluid" src="{{ url_for('static', filename='index.png') }}">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="showcase-middle">
+                    <h1>PACKGROW</h1>
+                    <p class="lead">Connecting people to win the packaging deals
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="showcase-right">
+                    <img class="img-fluid" src="{{ url_for('static', filename='dummy.jpg') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="list">
+    <div class="row ">
+        <div class="col-3">
+        </div>
+        <div class="col-3">
+            <div class="products">
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li>Films – BOPP | BOPET | CPP | PE | Thermal
+                    </li>
+                    <li>Inks</li>
+                    <li>Adhesives</li>
+                    <li>Aluminium Foil</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="visitors">
+                <h4>Relevant Visitors to use this Platform</h4>
+                <ul>
+                    <li>Manufacturer </li>
+                    <li>Distributor</li>
+                    <li>End Customers</li>
+                    <li>Agent</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+        </div>
+    </div>
+</section>
+<footer class="center bg-dark">
+    <p>Pack Grow &copy; 2019</p>
+</footer>
+
+{% endblock %}

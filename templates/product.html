@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: grey;
+  }
+
+  .searchbar {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+  }
+
+  .searchbar:hover .search-txt {
+    width: 240px;
+    padding: 0 6px;
+  }
+
+  .searchbar:hover .search-btn {
+    /* background: white; */
+    color: black;
+  }
+
+  .search-btn {
+    color: #e84118;
+    border-radius: 50%;
+    background: #2f3640;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    /* line-height: 40px; */
+    width: 0px;
+    font-weight: bold;
+  }
+</style>
+<!-- <script src="https://kit.fontawesome.com/9a56b18904.js" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<title>Caja de Busqueda con efecto</title>
+</head>
+
+<body>
+  <div class="searchbar d-flex justify-content-between align-items-center">
+    <div>
+    <input type="text" name="" class="search-txt" placeholder="Search here..." />
+  </div>
+    <div>
+      <a class="search-btn">
+        <i class="fa fa-search fa-lg"></i>
+      </a>
+    </div>
+  </div>
+
+  {% endblock %}
